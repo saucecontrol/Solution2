@@ -1,0 +1,6 @@
+.vs
+bin
+obj
+cpp/msvc
+cpp/gcc-14
+cpp/clang-19

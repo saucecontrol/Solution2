@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<AssemblyName>csharp-go-brrr</AssemblyName>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Nullable>enable</Nullable>
+
+		<PublishAot>true</PublishAot>
+
+		<IlcInstructionSet>native</IlcInstructionSet>
+		<OptimizationPreference>size</OptimizationPreference>
+		<InvariantGlobalization>true</InvariantGlobalization>
+
+		<IlcDisableReflection>true</IlcDisableReflection>
+	</PropertyGroup>
+
+</Project>

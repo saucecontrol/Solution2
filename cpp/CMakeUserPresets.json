@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "configurePresets": [
+      {
+        "name": "default",
+        "inherits": "vcpkg",
+        "environment": {
+          "VCPKG_ROOT": "c:\\gitlocal\\vcpkg"
+        }
+      },
+      {
+        "name": "gcc-14",
+        "inherits": "vcpkg-gcc-14",
+        "environment": {
+          "VCPKG_ROOT": "/mnt/c/gitlocal/vcpkg"
+        }
+      },
+      {
+        "name": "clang-19",
+        "inherits": "vcpkg-clang-19",
+        "environment": {
+          "VCPKG_ROOT": "/mnt/c/gitlocal/vcpkg"
+        }
+      }
+    ]
+}

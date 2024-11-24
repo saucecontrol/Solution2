@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "vcpkg",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/msvc",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    },
+    {
+      "name": "vcpkg-gcc-14",
+      "inherits": "vcpkg",
+      "binaryDir": "${sourceDir}/gcc-14",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc-14",
+        "CMAKE_CXX_COMPILER": "g++-14"
+      }
+    },
+    {
+      "name": "vcpkg-clang-19",
+      "inherits": "vcpkg",
+      "binaryDir": "${sourceDir}/clang-19",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang-19",
+        "CMAKE_CXX_COMPILER": "clang++-19"
+      }
+    }
+  ]
+}
